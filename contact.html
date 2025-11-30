@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - K. Motor Works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            color: var(--white);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        select.form-control option {
+            background-color: var(--bg-dark);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-wrench" style="color: var(--primary-color);"></i>
+                    K. Motor <span>Works</span>
+                </a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="index.html#get-quote" class="btn btn-primary"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; padding: 6rem 0; text-align: center;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p style="color: var(--text-gray); max-width: 600px; margin: 1rem auto;">Visit our workshop or book a home
+                service today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Map -->
+    <section class="section-padding">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+
+                <!-- Info -->
+                <div>
+                    <h2 style="margin-bottom: 2rem;">Get In Touch</h2>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Address</h4>
+                        <p style="color: var(--text-gray);">13/2, Mahendra Roy Ln, by pass, Maruti Bagan,<br>Kolkata,
+                            West Bengal 700046</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Phone</h4>
+                        <p style="color: var(--text-gray);"><a href="tel:09477633336">094776 33336</a></p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Opening Hours</h4>
+                        <p style="color: var(--text-gray);">Monday - Saturday: 9:00 AM – 8:00 PM</p>
+                        <p style="color: var(--text-gray);">Sunday: 9:00 AM – 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div
+                    style="height: 400px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3685.085964282748!2d88.392668!3d22.538456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe021259dff4b2d16!2sK.motor%20works!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Home Service Form -->
+    <section class="section-padding" style="background-color: var(--bg-darker);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="color: var(--primary-color);">Book Home Service</h2>
+                    <p style="color: var(--text-gray);">Can't make it to the workshop? We'll come to you. Fill out the
+                        form below to request a home service.</p>
+                </div>
+
+                <form id="home-service-form"
+                    style="background: var(--bg-dark); padding: 2rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="home-name">Your Name</label>
+                            <input type="text" id="home-name" name="name" class="form-control" required
+                                placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="home-phone">Phone Number</label>
+                            <input type="tel" id="home-phone" name="phone" class="form-control" required
+                                placeholder="9876543210">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="home-address">Full Address</label>
+                        <textarea id="home-address" name="address" class="form-control" rows="2" required
+                            placeholder="Street, Area, Landmark, Pincode"></textarea>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="home-brand">Car Brand</label>
+                            <select id="home-brand" name="brand" class="form-control" required>
+                                <option value="" disabled selected>Select Brand</option>
+                                <option value="Maruti Suzuki">Maruti Suzuki</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Tata">Tata</option>
+                                <option value="Mahindra">Mahindra</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Kia">Kia</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Renault">Renault</option>
+                                <option value="MG">MG</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="home-model">Car Model</label>
+                            <select id="home-model" name="model" class="form-control" required>
+                                <option value="" disabled selected>Select Brand First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="home-service">Service Type</label>
+                            <select id="home-service" name="service" class="form-control" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="General Service">General Service</option>
+                                <option value="Denting/Painting">Denting/Painting</option>
+                                <option value="AC Service">AC Service</option>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Cleaning">Cleaning/Detailing</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="home-date">Preferred Date</label>
+                            <input type="date" id="home-date" name="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px;">
+                            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <i class="fas fa-wrench" style="color: var(--primary-color);"></i>
+                        K. Motor <span>Works</span>
+                    </a>
+                    <p>Your trusted partner for automotive excellence in Kolkata. We provide top-notch service for all
+                        vehicle makes and models.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); width: 20px;"></i> 13/2,
+                        Mahendra Roy Ln, Kolkata 700046</p>
+                    <p><i class="fas fa-phone" style="color: var(--primary-color); width: 20px;"></i> 094776 33336</p>
+                    <p><i class="fas fa-clock" style="color: var(--primary-color); width: 20px;"></i> Mon-Sat: 9am -
+                        8pm<br><span style="margin-left: 24px;">Sun: 9am - 6pm</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 K. Motor Works. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919477633336" class="floating-btn" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:09477633336" class="floating-btn floating-call" title="Call Now">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
